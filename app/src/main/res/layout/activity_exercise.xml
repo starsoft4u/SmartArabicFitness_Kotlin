@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ExerciseActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorAccent"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="4dp"
+                android:text="@string/exercise_details"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/mainMuscle"
+                style="@style/TextStyle.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_muscle_" />
+
+            <TextView
+                android:id="@+id/difficulty"
+                style="@style/TextStyle.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/difficulty_" />
+
+            <TextView
+                android:id="@+id/equipment"
+                style="@style/TextStyle.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/equipment_" />
+
+            <TextView
+                android:id="@+id/otherMuscle"
+                style="@style/TextStyle.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/other_muscle_" />
+
+            <LinearLayout
+                android:id="@+id/setupPanel"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorAccent"
+                android:orientation="horizontal">
+
+                <com.sitaep.smartarabicfitness.view.custom.SetupSpinner
+                    android:id="@+id/setsSetup"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:maXValue="50"
+                    app:minValue="1"
+                    app:unit="@string/sets"
+                    app:value="3" />
+
+                <com.sitaep.smartarabicfitness.view.custom.SetupSpinner
+                    android:id="@+id/repsSetup"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:maXValue="100"
+                    app:minValue="1"
+                    app:unit="@string/reps"
+                    app:value="4" />
+
+                <com.sitaep.smartarabicfitness.view.custom.SetupSpinner
+                    android:id="@+id/secondsSetup"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:maXValue="180"
+                    app:minValue="1"
+                    app:unit="s"
+                    app:value="100" />
+
+                <com.sitaep.smartarabicfitness.view.custom.SetupSpinner
+                    android:id="@+id/kilogramSetup"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:maXValue="500"
+                    app:minValue="1"
+                    app:unit="Kg"
+                    app:value="5" />
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/exerciseImage"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/exercise"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="557:314"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorAccent"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="4dp"
+                android:text="@string/steps"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/steps"
+                style="@style/TextStyle.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

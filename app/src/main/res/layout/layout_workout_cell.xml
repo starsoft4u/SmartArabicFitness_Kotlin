@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="@color/lightGray" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/centerY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <ImageView
+            android:id="@+id/workoutImage"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="250:130"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/workout_1" />
+
+        <TextView
+            android:id="@+id/nameView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            android:maxLines="2"
+            android:text="Full Body Workout"
+            app:layout_constraintBottom_toTopOf="@+id/centerY"
+            app:layout_constraintEnd_toStartOf="@+id/lockImage"
+            app:layout_constraintStart_toEndOf="@+id/workoutImage" />
+
+        <TextView
+            android:id="@+id/goalView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:drawableStart="@drawable/ic_goal"
+            android:drawablePadding="8dp"
+            android:maxLines="2"
+            android:text="Fat Loss &amp; Endurance"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/workoutImage"
+            app:layout_constraintTop_toTopOf="@+id/centerY" />
+
+        <ImageView
+            android:id="@+id/lockImage"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginEnd="8dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="@+id/nameView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/nameView"
+            app:srcCompat="@drawable/ic_lock" />
+
+        <TextView
+            android:id="@+id/overlayView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:alpha="0.5"
+            android:visibility="gone"
+            android:background="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="@color/lightGray" />
+
+</LinearLayout>

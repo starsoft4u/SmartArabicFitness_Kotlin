@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="physical_activity">
+        <item>Sedentary activity</item>
+        <item>Light activity</item>
+        <item>Moderately activity</item>
+        <item>Very activity</item>
+        <item>Extremely activity</item>
+    </array>
+    <array name="material_calendar_months_array">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </array>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="whats_your_gender">What\'s your gender?</string>
+    <string name="all_exercise">All exercise</string>
+    <string name="remove_ads">Remove ads</string>
+    <string name="exercises">Exercises</string>
+    <string name="special_infos">Special Infos</string>
+    <string name="my_plan">My Plan</string>
+    <string name="add_note">Add Note</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="workouts">Workouts</string>
+    <string name="logs">Logs</string>
+    <string name="more">More</string>
+    <string name="select_exercise">Select Exercise</string>
+    <string name="name">Name</string>
+    <string name="name_hint">Edit here the name of the plan</string>
+    <string name="plan_notes">Plan Notes</string>
+    <string name="plan_notes_hint">Edit here the notes of the plan</string>
+    <string name="create_new_plan">Create New Plan</string>
+    <string name="exercise_details">Exercise Details</string>
+    <string name="main_muscle_">Main Muscle Group: %1$s</string>
+    <string name="set_of_reps_">%1$d set of %2$d reps</string>
+    <string name="rest_between_sets_">Rest between sets %1$d</string>
+    <string name="difficulty_">Difficulty: %1$s</string>
+    <string name="equipment_">Equipment: %1$s</string>
+    <string name="other_muscle_">Other Muscle Group: %1$s</string>
+    <string name="sets">Sets</string>
+    <string name="reps">Reps</string>
+    <string name="steps">Steps</string>
+    <string name="no_result">No Result</string>
+    <string name="cardio">Cardio</string>
+    <string name="indoor_cycling_running">INDOOR CYCLING, RUNNING</string>
+    <string name="before_exercise">Before Exercise</string>
+    <string name="after_exercise">After Exercise</string>
+    <string name="_5_10_min">5 to 10 Min</string>
+    <string name="_30_min">30 Min</string>
+    <string name="_5_to_7">5 to 7</string>
+    <string name="_6_to_8">6 to 8</string>
+    <string name="weeks">Weeks</string>
+    <string name="times_per_week">Times per week</string>
+    <string name="rest">Rest</string>
+    <string name="upper_body">Upper Body</string>
+    <string name="lower_body">Lower Body</string>
+    <string name="feet">Feet</string>
+    <string name="back">Back</string>
+    <string name="chest">Chest</string>
+    <string name="tricepts_chest">Tricepts + Chest</string>
+    <string name="biceps_back">Biceps + Back</string>
+    <string name="shoulders_abs">Shoulders + Abs</string>
+    <string name="arms">Arms</string>
+    <string name="shoulders">Shoulders</string>
+    <string name="bench_press">Bench press</string>
+    <string name="squat">Squat</string>
+    <string name="ruden">Ruden</string>
+    <string name="grunches">Grunches</string>
+    <string name="dips">Dips</string>
+    <string name="pull_up">Pull up</string>
+    <string name="deadlift">Deadlift</string>
+    <string name="bicepscurls">Bicepscurls</string>
+    <string name="shoulder_press">Shoulder press</string>
+    <string name="crunches">Crunches</string>
+    <string name="dumbbell_curls">Dumbbell curls</string>
+    <string name="_5_sets_5_reps">5 sets * 5 reps</string>
+    <string name="_5_sets_20_reps">5 sets * 20 reps</string>
+    <string name="_4_sets_15_20_reps">4 sets * 15–20 reps</string>
+    <string name="_3_sets_15_reps">3 sets * 15 reps</string>
+    <string name="_3_sets_10_12_reps">3 sets * 10–12 reps</string>
+    <string name="_3_sets_15_12_reps">3 sets * 15–12 reps</string>
+    <string name="age">Age</string>
+    <string name="tap_age">Tap here your age</string>
+    <string name="weight">Weight (Kg)</string>
+    <string name="tap_weight">Tap here your weight</string>
+    <string name="length">Length (cm)</string>
+    <string name="tap_length">Tap here your length</string>
+    <string name="calories_amount_calculation">Calories Amount Calculation</string>
+    <string name="sex_">Sex:</string>
+    <string name="man">Man</string>
+    <string name="woman">Woman</string>
+    <string name="age_">Age:</string>
+    <string name="weight_">Weight:</string>
+    <string name="length_">Length:</string>
+    <string name="physical_activity_">Physical Activity:</string>
+    <string name="result_">Result:</string>
+    <string name="body_fat_calculation">Body Fat Calculation</string>
+    <string name="type_of_body">Type of Body</string>
+    <string name="ectomorph">Ectomorph</string>
+    <string name="mesomorph">Mesomorph</string>
+    <string name="endomorph">Endomorph</string>
+    <string name="abdomen_">Abdomen:</string>
+    <string name="neck_">Neck:</string>
+    <string name="hip_">Hip:</string>
+    <string name="height_">Height:</string>
+    <string name="ectomorph_title1">Specifications\n</string>
+    <string name="ectomorph_detail1" formatted="false">- Rapid metabolism\n- Skinny body\n- Poor chest and shoulders\n- Long ground and hands\n- Can not easily increase weight\n- When you do not exercise, you lose weight quickly\n- Can eat whatever he wants\n- Low fat content</string>
+    <string name="ectomorph_title2">Method of training\n</string>
+    <string name="ectomorph_detail2" formatted="false">– 20 minutes a week in one time Cardio exercises on moving away\n– (60–45 minutes) is longer and not limited to the duration of training \n- 6 to 10 repetitions\n- 6 Up to 8 rounds per exercise\n- 2 mins on no flights No breaks between duration\n- My food is complementary</string>
+    <string name="ectomorph_title3">Nutrition: Actomorph\n</string>
+    <string name="ectomorph_detail3" formatted="false">- 50% Carbohydrates\n- 25% fat\n- 25% protein\n- 50% Carbohydrates</string>
+    <string name="ectomorph_title4">Nutritional supplements\n</string>
+    <string name="ectomorph_detail4" formatted="false">- Créatine\n- Magnesium\n- Zink\n- VitaminD\n- Weigh Gainer\n- Omega 3 kapsel</string>
+    <string name="mesomorph_title1">Specifications\n</string>
+    <string name="mesomorph_detail1" formatted="false">- Body Muscle\n- Contains low fat\n- Build Muscle Fast\n- Strongness and Influence\n- Quickly increases or decreases weight\n- In the case of non-exercise loses muscle mass\n- Method of training</string>
+    <string name="mesomorph_title2">Method of training\n</string>
+    <string name="mesomorph_detail2" formatted="false">- Combines strength and cardio exercises\n- Returns between 8 and 12\n- Rest time between 30 and 60 seconds</string>
+    <string name="mesomorph_title3">Feeding to Landomorph\n</string>
+    <string name="mesomorph_detail3" formatted="false">- 65% carbohydrates\n- 10% fat\n- 25% protein</string>
+    <string name="mesomorph_title4">Food supplements\n</string>
+    <string name="mesomorph_detail4" formatted="false">- Creatine\n- magnesium\n- Zinc\n- VitaminD\n- protein\n- Omega 3 kapsel</string>
+    <string name="endomorph_title1">Specifications\n</string>
+    <string name="endomorph_detail1" formatted="false">- Slow Metabolism\n- The percentage of fat in his body is high\n- Low Fat Burn Rate\n- If you do not exercise, the weight increases and the fat in your body rises</string>
+    <string name="endomorph_title2">Method of training\n</string>
+    <string name="endomorph_detail2" formatted="false">- Combines strength and cardio exercises\n- Minutes 90 to 60 Duration of the training session between\n- 40% / 60% should be and Cardio power exercises between the relationship</string>
+    <string name="endomorph_title3">Feeding: Mizumor\n</string>
+    <string name="endomorph_detail3" formatted="false">- 20% Carbohydrates 20% Fat\n- 60% proteins\n- 20% fat</string>
+    <string name="endomorph_title4">Food supplements\n</string>
+    <string name="endomorph_detail4" formatted="false">- Créatine\n- Magnesium\n- Zink\n- VitaminD\n- Protein iso\n- Omega 3 kapsel</string>
+    <string name="bmi">BMI</string>
+    <string name="calculate">Calculate</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="language">Language</string>
+    <string name="select_the_language">Select the language</string>
+    <string name="english">English</string>
+    <string name="arabic">Arabic</string>
+    <string name="app_s_evaluation">App\'s evaluation</string>
+    <string name="help">Help</string>
+    <string name="contact">Contact</string>
+    <string name="facebook">Facebook</string>
+    <string name="instagram">Instagram</string>
+    <string name="tweeter">Tweeter</string>
+    <string name="term_conditions">Term &amp; conditions</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="material_calendar_monday">MON</string>
+    <string name="material_calendar_tuesday">TUE</string>
+    <string name="material_calendar_wednesday">WED</string>
+    <string name="material_calendar_thursday">THU</string>
+    <string name="material_calendar_friday">FRI</string>
+    <string name="material_calendar_saturday">SAT</string>
+    <string name="material_calendar_sunday">SUN</string>
+    <string name="full_plan_man">Full plan beginner</string>
+    <string name="full_plan_woman">Full plan woman</string>
+    <string name="full_body_plan">Full Body Training Plan</string>
+    <string name="full_plan_notes">This plan aims a total training of all body muscles. It\'s considered as one of the best and easiest training methods for beginners as it contributes in getting good results.\n\nIt could be accomplished as following:\n– Exercises number :  8– 12\n– Sets number : 3– 4\n– Rest duration : 60– 120 seconds</string>
+    <string name="beginner">Beginner</string>
+    <string name="beginner_notes" formatted="false">Twice a week with at least one day rest between training sessions. Keep repeating the same exercises.</string>
+    <string name="advanced">Advanced</string>
+    <string name="advanced_notes" formatted="false">3 times per week with at least one day rest between training sessions. Keep repeating the same exercises.</string>
+    <string name="plan2_title">2er-Split Training</string>
+    <string name="plan2_notes" formatted="false">- This plan is designed for advanced level individuals. It aims to build strong muscles and increase strength.\n- Although this plan is not very used, it helps to build strong muscles as the muscles are trained in different ways. The legend Arnold Schwarzenegger said that this plan type helped him to get "Mister Universe" as he was training the muscle twice to three times per week.\n- It can be accomplished as following:</string>
+    <string name="plan3_title">3er-Split Training</string>
+    <string name="plan3_notes" formatted="false">– This plan is designed for men as well as women with less than 6 months training experience and who aim to get to a higher level.\n– The total duration of training + warming should not exceed 80 minutes.\n– The exercises should be changed each 4 – 6 weeks so that the body don\'t get used to.\nIt can be accomplished as following:</string>
+    <string name="plan4_title">4er-Split Training</string>
+    <string name="plan4_notes" formatted="false">This plan is designed for athletes with an experience of more than 6 months.\n- The quality of training is more important than the reps amount.\nA good warming is essential for any strength training to avoid any risk of injury.\nThe plan could be accomplished as following:</string>
+    <string name="plan5_title">5x5 Trainingsplan</string>
+    <string name="plan5_notes" formatted="false">– This plan is designed for beginners as well as advanced athletes. It aims to increase body strength. It is based on an easy and very efficient training method.\n– Training 3 times per week.\n– 5 sets and 5 reps per exercise.\n– Rest between sets: 2–3 minutes\n– Training level: beginner, intermediate, advanced\n\nBeginner\'s week example:\n\n Monday: 5x5 with 85 % of maximum weight.\n  Wednesday: 5x5 with 85 % of maximum weight.\n  Friday: 5x5 with 85 % of maximum weight.\n\nAdvanced week example:\n  Monday: 5x5 with 85 % of maximum weight.\n  Wednesday: 5x5 with 65 % of maximum weight.\n  Friday: 5x5 with 70–80 as maximum weight\n\nIt could be accomplished as following:</string>
+    <string name="not_recommended_for_beginners">(Not recommended for beginners)</string>
+    <string name="exercise_muscle_once_a_week">Muscle training once a week</string>
+    <string name="exercise_muscle_twice_a_week">Muscle training twice a week</string>
+    <string name="exercise_muscle_3_times_a_week">Muscle training three times a week</string>
+    <string name="method1">First method</string>
+    <string name="method2">Second method</string>
+    <string name="day1">First day</string>
+    <string name="day2">Second day</string>
+    <string name="day3">Third day</string>
+    <string name="one_time_per_week">One Time Per Week</string>
+    <string name="two_times_per_week">Two Times Per Week</string>
+    <string name="three_times_per_week">3 Times Per Week</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="level1">Level1\nBeginner</string>
+    <string name="level2">Level2\nAdvanced</string>
+    <string name="instructions">INSTRUCTIONS</string>
+    <string name="about">ABOUT</string>
+    <string name="start">START</string>
+    <string name="please_select_gender">Please select gender</string>
+    <string name="ok">OK</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="app_name">Smart Arabic Fitness</string>
+
+</resources>

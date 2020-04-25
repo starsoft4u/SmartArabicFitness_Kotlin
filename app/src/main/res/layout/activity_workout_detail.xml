@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    tools:context=".view.WorkoutDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/descriptionView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightGray"
+            android:padding="16dp"
+            android:text="This program aims to increase the level of burning calories and thus increase the rate of fat burning in the body. It is a combination of strength exercises and cardio exercises.\nThe program can be performed anywhere (home, gym). It does not need special equipment. It is suitable for beginners and applicants. There is a different in how you perform by level of training."
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@android:color/white"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/beginnerButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/level1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="2dp"
+                android:layout_height="50dp"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:id="@+id/advancedButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/level2"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#ddd"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/goalView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_goal"
+                android:gravity="center"
+                android:text="Fat Loss\nEndurance"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="2dp"
+                android:layout_height="50dp"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:id="@+id/levelView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_level"
+                android:gravity="center"
+                android:text="Beginner\nAdvanced"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="2dp"
+                android:layout_height="50dp"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:id="@+id/equipmentView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_without"
+                android:gravity="center"
+                android:text="Without\n"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_warning"
+            android:drawablePadding="16dp"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/instructions"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/instructionView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp"
+            android:text="-Warm up the body between 5 to 10 minutes before exercising\n-Choose the right weight for you\n-The need to do stretching exercises after the end of the program to avoid muscle contraction\n-Health nutrition is a factor in achieving best outcome (30% exercise, 70% nutrition)\n- Make sure that your body is healthy and isPurchased from injuries and diseases before doing the program, we do not taake any responsibility"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</ScrollView>

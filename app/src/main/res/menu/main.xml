@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuPremium"
+        android:icon="@drawable/ic_no_ads"
+        android:title="@string/remove_ads" />
+    <item
+        android:id="@+id/menuExercises"
+        android:icon="@drawable/ic_exercise"
+        android:title="@string/exercises" />
+    <item
+        android:id="@+id/menuSpecialInfos"
+        android:icon="@drawable/ic_special_info"
+        android:title="@string/special_infos" />
+    <item
+        android:id="@+id/menuMyPlan"
+        android:icon="@drawable/ic_my_plan"
+        android:title="@string/my_plan" />
+    <item
+        android:id="@+id/menuWorkouts"
+        android:icon="@drawable/ic_workouts"
+        android:title="@string/workouts" />
+    <item
+        android:id="@+id/menuLogs"
+        android:icon="@drawable/ic_logs"
+        android:title="@string/logs" />
+    <item
+        android:id="@+id/menuMore"
+        android:icon="@drawable/ic_more"
+        android:title="@string/more" />
+
+</menu>

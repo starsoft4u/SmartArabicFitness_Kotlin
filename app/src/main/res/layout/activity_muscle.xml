@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.MuscleDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/muscleSelect"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@null"
+            android:dropDownWidth="match_parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/muscleSelect"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/ic_dropdown_black" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightGray" />
+
+    <com.kennyc.view.MultiStateView
+        android:id="@+id/stateView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:msv_emptyView="@layout/empty_state"
+        app:msv_viewState="empty">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/tableView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.kennyc.view.MultiStateView>
+
+</LinearLayout>

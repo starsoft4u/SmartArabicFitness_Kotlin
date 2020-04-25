@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.SpecialInfoActivity">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/divider_8dp"
+        android:orientation="vertical"
+        android:paddingBottom="24dp"
+        android:showDividers="middle">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/ageRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/age"
+                android:textSize="17sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/ageToggleButton"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:alpha="0"
+                android:tag="0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/ageEdit"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@null"
+                android:hint="@string/tap_age"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ageRadio" />
+
+            <Button
+                android:id="@+id/ageSaveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/save"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/ageEdit"
+                app:layout_constraintTop_toBottomOf="@+id/ageEdit" />
+
+            <Button
+                android:id="@+id/ageCancelButton"
+                style="@style/ButtonStyle.Secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/cancel"
+                app:layout_constraintBottom_toBottomOf="@+id/ageSaveButton"
+                app:layout_constraintStart_toEndOf="@+id/ageSaveButton"
+                app:layout_constraintTop_toTopOf="@+id/ageSaveButton" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/weightRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/weight"
+                android:textSize="17sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/weightToggleButton"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:background="#01ffffff"
+                android:tag="0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/weightEdit"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@null"
+                android:hint="@string/tap_weight"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/weightRadio" />
+
+            <Button
+                android:id="@+id/weightSaveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/save"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/weightEdit"
+                app:layout_constraintTop_toBottomOf="@+id/weightEdit" />
+
+            <Button
+                android:id="@+id/weightCancelButton"
+                style="@style/ButtonStyle.Secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/cancel"
+                app:layout_constraintBottom_toBottomOf="@+id/weightSaveButton"
+                app:layout_constraintStart_toEndOf="@+id/weightSaveButton"
+                app:layout_constraintTop_toTopOf="@+id/weightSaveButton" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/lengthRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/length"
+                android:textSize="17sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/lengthToggleButton"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:background="#01ffffff"
+                android:tag="0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/lengthEdit"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@null"
+                android:hint="@string/tap_length"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lengthRadio" />
+
+            <Button
+                android:id="@+id/lengthSaveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/save"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/lengthEdit"
+                app:layout_constraintTop_toBottomOf="@+id/lengthEdit" />
+
+            <Button
+                android:id="@+id/lengthCancelButton"
+                style="@style/ButtonStyle.Secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/cancel"
+                app:layout_constraintBottom_toBottomOf="@+id/lengthSaveButton"
+                app:layout_constraintStart_toEndOf="@+id/lengthSaveButton"
+                app:layout_constraintTop_toTopOf="@+id/lengthSaveButton" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/caloriesRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/calories_amount_calculation"
+                android:textSize="17sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/caloriesToggleButton"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:background="#01ffffff"
+                android:tag="0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/sex_"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/caloriesRadio" />
+
+            <TextView
+                android:id="@+id/caloriesSexView"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:background="@drawable/button_secondary"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView9"
+                app:layout_constraintEnd_toEndOf="@+id/caloriesActivityView"
+                app:layout_constraintStart_toEndOf="@+id/textView13"
+                app:layout_constraintStart_toStartOf="@+id/caloriesActivityView"
+                app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/age_"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/textView9"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <TextView
+                android:id="@+id/caloriesAgeView"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:background="@drawable/button_secondary"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView10"
+                app:layout_constraintEnd_toEndOf="@+id/caloriesActivityView"
+                app:layout_constraintStart_toStartOf="@+id/caloriesActivityView"
+                app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/weight_"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/textView10"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <TextView
+                android:id="@+id/caloriesWeightView"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:background="@drawable/button_secondary"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Kg"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView11"
+                app:layout_constraintEnd_toEndOf="@+id/caloriesActivityView"
+                app:layout_constraintStart_toStartOf="@+id/caloriesActivityView"
+                app:layout_constraintTop_toTopOf="@+id/textView11" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/length_"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/textView11"
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+            <TextView
+                android:id="@+id/caloriesLengthView"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:background="@drawable/button_secondary"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="cm"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView12"
+                app:layout_constraintEnd_toEndOf="@+id/caloriesActivityView"
+                app:layout_constraintStart_toStartOf="@+id/caloriesActivityView"
+                app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/physical_activity_"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/textView12"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+            <TextView
+                android:id="@+id/caloriesActivityView"
+                android:layout_width="180dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/button_secondary"
+                android:drawableEnd="@drawable/ic_dropdown_black"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView13"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/physicalActivitySpinner"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:alpha="0"
+                app:layout_constraintBottom_toBottomOf="@+id/caloriesActivityView"
+                app:layout_constraintEnd_toEndOf="@+id/caloriesActivityView"
+                app:layout_constraintStart_toStartOf="@+id/caloriesActivityView"
+                app:layout_constraintTop_toTopOf="@+id/caloriesActivityView" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/result_"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/textView13"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+            <TextView
+                android:id="@+id/caloriesResultView"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:background="@drawable/button_secondary"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView14"
+                app:layout_constraintEnd_toEndOf="@+id/caloriesActivityView"
+                app:layout_constraintStart_toStartOf="@+id/caloriesActivityView"
+                app:layout_constraintTop_toTopOf="@+id/textView14" />
+
+            <Button
+                android:id="@+id/caloriesButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/calculate"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView14"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/fatRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/body_fat_calculation"
+                android:textSize="17sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/fatToggleButton"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:background="#01ffffff"
+                android:tag="0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/abdomen_"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fatRadio" />
+
+            <EditText
+                android:id="@+id/fatAbdomenText"
+                android:layout_width="180dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/button_secondary"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+            <TextView
+                android:id="@+id/fatHipLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/hip_"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/textView7"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <EditText
+                android:id="@+id/fatHipText"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:background="@drawable/button_secondary"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/fatHipLabel"
+                app:layout_constraintEnd_toEndOf="@+id/fatAbdomenText"
+                app:layout_constraintStart_toStartOf="@+id/fatAbdomenText"
+                app:layout_constraintTop_toTopOf="@+id/fatHipLabel" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/neck_"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/fatHipLabel"
+                app:layout_constraintTop_toBottomOf="@+id/fatHipLabel" />
+
+            <EditText
+                android:id="@+id/fatNeckText"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:background="@drawable/button_secondary"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView15"
+                app:layout_constraintEnd_toEndOf="@+id/fatAbdomenText"
+                app:layout_constraintStart_toStartOf="@+id/fatAbdomenText"
+                app:layout_constraintTop_toTopOf="@+id/textView15" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/height_"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/textView15"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+            <EditText
+                android:id="@+id/fatHeightText"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:background="@drawable/button_secondary"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView18"
+                app:layout_constraintEnd_toEndOf="@+id/fatAbdomenText"
+                app:layout_constraintStart_toStartOf="@+id/fatAbdomenText"
+                app:layout_constraintTop_toTopOf="@+id/textView18" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/result_"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/textView18"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+            <TextView
+                android:id="@+id/fatResultLabel"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:background="@drawable/button_secondary"
+                android:gravity="center"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView19"
+                app:layout_constraintEnd_toEndOf="@+id/fatAbdomenText"
+                app:layout_constraintStart_toStartOf="@+id/fatAbdomenText"
+                app:layout_constraintTop_toTopOf="@+id/textView19" />
+
+            <Button
+                android:id="@+id/fatButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/calculate"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView19"
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <RadioButton
+                android:id="@+id/bmiRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/bmi"
+                android:textSize="17sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/bmiToggleButton"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:background="#01ffffff"
+                android:tag="0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/weight_"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bmiRadio" />
+
+            <TextView
+                android:id="@+id/bmiWeightView"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/button_secondary"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Kg"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="@+id/textView16" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/length_"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/textView16"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+            <TextView
+                android:id="@+id/bmiLengthView"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/button_secondary"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="cm"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView17"
+                app:layout_constraintEnd_toEndOf="@+id/bmiWeightView"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="@+id/textView17" />
+
+            <Button
+                android:id="@+id/bmiButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/calculate"
+                app:layout_constraintStart_toStartOf="@+id/textView16"
+                app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+            <ImageView
+                android:id="@+id/boardImage"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1024:658"
+                app:layout_constraintEnd_toEndOf="@+id/bmiWeightView"
+                app:layout_constraintStart_toStartOf="@+id/textView16"
+                app:layout_constraintTop_toBottomOf="@+id/bmiButton"
+                app:srcCompat="@drawable/board" />
+
+            <ImageView
+                android:id="@+id/boardImageHandle"
+                android:layout_width="20dp"
+                android:layout_height="80dp"
+                app:layout_constraintBottom_toBottomOf="@+id/boardImage"
+                app:layout_constraintEnd_toEndOf="@+id/boardImage"
+                app:layout_constraintStart_toStartOf="@+id/boardImage"
+                app:srcCompat="@drawable/board_handle" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</ScrollView>

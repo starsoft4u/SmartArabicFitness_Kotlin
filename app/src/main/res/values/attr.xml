@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SetupSpinner">
+        <attr name="value" format="integer" />
+        <attr name="unit" format="string" />
+        <attr name="minValue" format="integer" />
+        <attr name="maXValue" format="integer" />
+    </declare-styleable>
+</resources>

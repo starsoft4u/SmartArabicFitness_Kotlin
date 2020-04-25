@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "696818332266",
+    "firebase_url": "https://fir-firebasemap.firebaseio.com",
+    "project_id": "firebase-firebasemap",
+    "storage_bucket": "firebase-firebasemap.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696818332266:android:78f46e6d19dfb82c",
+        "android_client_info": {
+          "package_name": "com.sitaep.gypsysticks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696818332266-m6ikb9vfggd704ahsr3j0uck08ur0him.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sitaep.gypsysticks",
+            "certificate_hash": "11cbceacc6ad357361f7d82eaca41d0335002a87"
+          }
+        },
+        {
+          "client_id": "696818332266-hathogug0kk9qbvmpdgndurnc58nh0fr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFqxcELZy8tYagrOoh5WYyr7mx1eAuqvQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696818332266-hathogug0kk9qbvmpdgndurnc58nh0fr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "696818332266-kd1uoreul1sbjf6sl94gcjpm9om258a7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.peatis.FirebaseMap"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696818332266:android:daed395a7f2c4ed5",
+        "android_client_info": {
+          "package_name": "com.sitaep.smartarabicfitness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696818332266-vgrteogkk4du2b851qaah3ppj2rgs9gl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sitaep.smartarabicfitness",
+            "certificate_hash": "0e0dd5b5e484f8ab2a30c4ab3eddd8887bea952b"
+          }
+        },
+        {
+          "client_id": "696818332266-hathogug0kk9qbvmpdgndurnc58nh0fr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFqxcELZy8tYagrOoh5WYyr7mx1eAuqvQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696818332266-hathogug0kk9qbvmpdgndurnc58nh0fr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "696818332266-kd1uoreul1sbjf6sl94gcjpm9om258a7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.peatis.FirebaseMap"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

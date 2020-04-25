@@ -1,0 +1,72 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:textViewStyle">@style/TextStyle</item>
+        <item name="android:buttonStyle">@style/ButtonStyle</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Splash" parent="AppTheme.NoActionBar">
+        <item name="android:statusBarColor">@android:color/black</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ButtonStyle">
+        <item name="android:minHeight">32dp</item>
+        <item name="android:minWidth">140dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:background">@drawable/button_primary</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ButtonStyle.Secondary">
+        <item name="android:background">@drawable/button_secondary</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="SplitButton">
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="TextStyle">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="TextStyle.Label">
+        <item name="android:textColor">#a000</item>
+        <item name="android:background">@color/lightGray</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+    </style>
+
+    <style name="ImageButton">
+        <item name="android:background">@null</item>
+        <item name="android:textAlignment">textStart</item>
+    </style>
+
+</resources>
